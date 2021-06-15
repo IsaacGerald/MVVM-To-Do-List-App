@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="task"
+            type="com.example.todo_listapp.data.Task" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <CheckBox
+            android:id="@+id/check_box_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/check_box_completed"
+            android:layout_alignBottom="@id/check_box_completed"
+            android:layout_toStartOf="@id/label_priority"
+            android:layout_toEndOf="@id/check_box_completed"
+            android:ellipsize="end"
+            android:text="@{task.name}"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@id/label_priority"
+            android:layout_toRightOf="@id/check_box_completed" />
+
+        <ImageView
+            android:id="@+id/label_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_priority"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+</layout>

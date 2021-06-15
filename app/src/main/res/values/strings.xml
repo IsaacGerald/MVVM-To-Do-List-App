@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ToDo-List App</string>
+    <string name="action_search">Search</string>
+    <string name="action_sort">Sort</string>
+    <string name="action_completed">Completed</string>
+    <string name="delete_all_completed">Delete all completed</string>
+    <string name="hide_completed">Hide completed</string>
+    <string name="action_sort_by_name">Sort by name</string>
+    <string name="sort_by_date_created">Sort by date created</string>
+</resources>
